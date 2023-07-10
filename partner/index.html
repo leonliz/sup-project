@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style-media.css">
+    <title>Партнерам</title>
+</head>
+
+<body>
+    <div class="page">
+        <div class="page__wrapper">
+
+            <header class="page__header header">
+                <div class="header__bg-black"></div>
+                <div class="header__main">
+                    <div class="header__container container">
+                        <div class="header__content">
+                            <div class="header__logo">
+                                <a href="../index.html"><img src="../img/logo.svg" alt="Логотип"></a>
+                            </div>
+                            <div class="header__nav">
+                                <ul class="nav__list">
+                                    <li class="nav__item active">
+                                        <a class="nav__link" href="../index.html">Главная</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="../projects/index.html">Проекты</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="../news/index.html">Новости</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="../technostart/index.html">Техностарт</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="../partner/index.html">Партнерам</a>
+                                    </li>
+                                    <li class="nav__item">
+                                        <a class="nav__link" href="../patent/index.html">Патенты</a>
+                                    </li>
+                                    <li class="nav__item nav-login">
+                                        <a class="nav__link" href="../form-authorization.html"><i
+                                                class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__mobile header-mobile">
+                    <div class="header-mobile__logo">
+                        <a href="../index.html"><img src="../img/logo.svg" alt="Логотип"></a>
+                    </div>
+                    <div class="header-mobile__burger">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-mobile__content">
+                        <div class="header-mobile__section mobile-top">
+                            <div class="mobile-top__account">
+                                <div class="account__photo">
+                                    <i class="fa-solid fa-user"></i>
+                                </div>
+                                <div class="account__name">
+                                    <a href="../form-authorization.html">Леонова Елизавета</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="header-mobile__section mobile-bottom">
+                            <div class="mobile-bottom__nav mobile-nav">
+                                <div class="mobile-nav__item">
+                                    <a href="../index.html">Главная</a>
+                                </div>
+                                <div class="mobile-nav__item">
+                                    <a href="../projects/index.html">Проекты</a>
+                                </div>
+                                <div class="mobile-nav__item">
+                                    <a href="../news/index.html">Новости</a>
+                                </div>
+                                <div class="mobile-nav__item open">
+                                    <a href="../technostart/index.html">Техностарт</a>
+                                </div>
+                                <div class="mobile-nav__item">
+                                    <a href="../partner/index.html">Партнерам</a>
+                                </div>
+                                <div class="mobile-nav__item">
+                                    <a href="../patent/index.html">Патенты</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <main class="page__main main">
+
+                <section class="main__section background-start start">
+                    <div class="section__container container">
+                        <div class="start__body">
+                            <div class="start__title ">
+                                Партнерам
+                            </div>
+                            <div class="start__subtitle ">
+                                Если есть идея стартапа, вы можете предложить ее для развития и реализации
+                            </div>
+                            <div class="start__button button-anchor button">
+                                <button type="button">Предложить идею <i class="fa-solid fa-arrow-down"></i></button>
+                            </div>
+                        </div>
+                        <div class="start__img partner">
+                            <img src="../img/main/partner.png" alt="Partner">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main__section background-gray" id="section-anchor">
+                    <div class="section__container container">
+                        <div class="section__content">
+                            <div class="section__title">
+                                Ваша идея
+                            </div>
+                            <div class="section__body">
+                                <div class="form-block">
+                                    <form id="form" class="form" method="post">
+                                        <div class="form__body">
+                                            <div class="form__line">
+                                                <div class="form__item form-item">
+                                                    <div class="form-item__title">
+                                                        ФИО
+                                                    </div>
+                                                    <div class="form-item__input">
+                                                        <input name="fio" type="text" pattern="^[А-Яа-яЁё\s]+$" placeholder="ФИО">
+                                                        <div class="form__error">
+                                                            * ФИО не должно содержать цифры и знаки препинания
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <div class="form__item form-item">
+                                                    <div class="form-item__title">
+                                                        Факультет
+                                                    </div>
+                                                    <div class="form-item__input">
+                                                        <select name="faculty">
+                                                            <option disabled selected value="0">Выберите</option>
+                                                            <option value="1">ФИ</option>
+                                                            <option value="2">ФТ</option>
+                                                            <option value="3">ФГ</option>
+                                                            <option value="4">ФРТ</option>
+                                                            <option value="5">ИЭ</option>
+                                                            <option value="6">ИМС</option>
+                                                            <option value="7">ИНХ</option>
+                                                            <option value="8">ИДЭС</option>
+                                                        </select>
+                                                        <div class="form__error">
+                                                            * выберите факультет
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form__item form-item">
+                                                    <div class="form-item__title">
+                                                        Группа
+                                                    </div>
+                                                    <div class="form-item__input">
+                                                        <input name="group" id="group" type="text" placeholder="Группа">
+                                                        <div class="form__error">
+                                                            * введите группу
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <div class="form__item form-item">
+                                                    <div class="form-item__title">
+                                                        Email
+                                                    </div>
+                                                    <div class="form-item__input">
+                                                        <input name="email" type="email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                                                               placeholder="Email">
+                                                        <div class="form__error">
+                                                            * введите корректный email, например email@example.com
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__line">
+                                                <div class="form__item form-item">
+                                                    <div class="form-item__title">
+                                                        Телефон
+                                                    </div>
+                                                    <div class="form-item__input">
+                                                        <input name="phone" id="phone" type="text" placeholder="Телефон">
+                                                        <div class="form__error">
+                                                            * введите корректный номер телефона, например +7-(999)-999-99-99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form__button">
+                                                <button id="button" type="button">Присоединиться</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+
+            <footer class="page__footer footer">
+                <div class="footer__container container">
+                    <div class="footer__content">
+                        <div class="footer__title">
+                            Отдел инновационной деятельности
+                        </div>
+                        <div class="footer__contacts footer-contacts">
+                            <div class="footer-contacts__list">
+                                <div class="footer-contacts__item">
+                                    <div class="footer-contacts__title">
+                                        Адрес:
+                                    </div>
+                                    <div class="footer-contacts__info">
+                                        644050, г. Омск, проспект Мира, д.11
+                                    </div>
+                                    <div class="footer-contacts__info">
+                                        корпус: главный, кабинеты: 206, 203
+                                    </div>
+                                </div>
+                                <div class="footer-contacts__item">
+                                    <div class="footer-contacts__title">
+                                        Связаться:
+                                    </div>
+                                    <div class="footer-contacts__info">
+                                        <a href="tel:+73812217891" class="footer-contacts__link"><i
+                                                class="fa-solid fa-phone"></i>+7 (3812) 21-78-91</a>
+                                    </div>
+                                    <div class="footer-contacts__info">
+                                        <a href="mailto:oid@omgtu.ru" class="footer-contacts__link"><i
+                                                class="fa-regular fa-envelope"></i>oid@omgtu.ru</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contacts__item">
+                                    <div class="footer-contacts__title">
+                                        Соц-сети:
+                                    </div>
+                                    <div class="footer-contacts__info footer-media">
+                                        <div class="footer-media__list">
+                                            <div class="footer-media__item">
+                                                <a href="#" class="footer-contacts__link"><i
+                                                        class="fa-brands fa-vk"></i></a>
+                                            </div>
+                                            <div class="footer-media__item">
+                                                <a href="#" class="footer-contacts__link"><i
+                                                        class="fa-brands fa-instagram"></i></a>
+                                            </div>
+                                            <div class="footer-media__item">
+                                                <a href="#" class="footer-contacts__link"><i
+                                                        class="fa-brands fa-telegram"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom">
+                            2022 SUP OMSTU. Все права защищены
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="../js/jquery-3.6.0.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/jquery.maskedinput.js"></script>
+    <script src="../js/jquery.maskedinput.min.js"></script>
+</body>
+
+</html>
